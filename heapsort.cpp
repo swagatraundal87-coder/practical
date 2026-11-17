@@ -76,3 +76,52 @@ int main()
 
     return 0;
 }
+
+/*
+## **1. Theory**
+
+**Heap Sort** is a sorting technique based on the Binary Heap data structure. It first converts the array into a Max Heap and then repeatedly moves the largest element to the end of the array.
+
+In this program, elements are sorted in ascending order.
+
+## **2. Algorithm**
+
+1. Start.
+2. Read the number of elements and array elements.
+3. Convert the array into a Max Heap using the `heapify()` function.
+4. Swap the root element (largest element) with the last element.
+5. Reduce the heap size by one.
+6. Apply Heapify again to maintain the Max Heap.
+7. Repeat until all elements are sorted.
+8. Display the sorted array.
+9. Stop.
+
+## **3. Example**
+
+**Input:**
+
+```
+Enter number of elements: 5
+Enter array elements:
+5 3 4 1 2
+```
+
+**Working:**
+
+- Original array: `5 3 4 1 2`
+- Max Heap: `5 3 4 1 2`
+- Pass 1: `4 3 2 1 5`
+- Pass 2: `3 1 2 4 5`
+- Pass 3: `2 1 3 4 5`
+- Pass 4: `1 2 3 4 5`
+
+**Output:**
+
+```
+Sorted array: 1 2 3 4 5
+```
+
+## **4. Conclusion**
+
+Thus, we have successfully implemented the Heap Sort technique in C++ using a Max Heap to arrange array elements in ascending order.
+*/
